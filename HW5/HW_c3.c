@@ -1,14 +1,15 @@
 #include <stdio.h>
 
-
-int main ()
+int middle(int a, int b) 
 {
-	int a,b,c;
-    scanf ("%d %d", &a,&b);
-    int middle(int a,int b);
-    c=(a+b)/2;
-{
-	printf("%d",c);
+    return (a + b) / 2;
 }
-	return 0;
-}	    
+
+int main() 
+{
+    int num1, num2;
+    scanf("%d %d", &num1,&num2);   
+    printf("%d", middle(num1, num2));
+    
+    return 0;
+}

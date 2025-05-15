@@ -1,13 +1,22 @@
 #include <stdio.h>
-#include <math.h>
 
-int main ()
+int power(int n, int p) {
+    int result = 1;
+    
+    for (int i = 0; i < p; i++) 
+    {
+        result *= n;
+    }
+    
+    return result;
+}
+
+int main() 
 {
-	int a,b,c;
-    scanf ("%d %d", &a,&b);
-    c=pow(a,b);
-{    
-     printf("%d",c); 
-}     
-return 0; 
+    int num, exp;     
+    scanf("%d %d", &num,&exp);
+{           
+    printf("%d",  power(num, exp));
+}    
+    return 0;
 }

@@ -1,18 +1,22 @@
 #include <stdio.h>
-
-
-       
- int main ()
+int sum_to_n(int n) 
 {
-	int a,c=0;
-	scanf("%d", &a);
-	
-	for(int i=1;i<=a;i++)
-	c+=i;
-{
-	printf("%d",c);
-}	
-	return 0;	
+    int sum = 0;  
+    
+    for (int i = 1; i <= n; i++) 
+    {
+        sum += i;  
+    }
+    
+    return sum;
 }
 
-  
+int main() 
+{
+    int num;
+    scanf("%d", &num);   
+   
+    printf("%d", sum_to_n(num));
+    
+    return 0;
+}
