@@ -1,7 +1,7 @@
 #ifndef TEMP_API_H
 #define TEMP_API_H
 
-#define MAX_RECORDS 1000
+#define MAX_RECORDS 100000
 
 typedef struct 
 {

@@ -124,7 +124,7 @@ int load_from_csv(const char *filename, TempRecord records[], int *size)
     }
 
     TempRecord temp;
-    while (fscanf(file, "%d,%d,%d,%d,%d,%d",
+    while (fscanf(file, "%d;%d;%d;%d;%d;%d",
                   &temp.year, &temp.month, &temp.day,
                   &temp.hour, &temp.minute, &temp.temperature) == 6) 				  
 	{
